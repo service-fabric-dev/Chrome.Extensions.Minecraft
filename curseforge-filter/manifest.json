@@ -1,0 +1,26 @@
+{
+    "name": "CurseForge Filter",
+    "description": "Filters CurseForge modpack lists",
+    "version": "1.0",
+    "manifest_version": 3,
+    "options_page": "options.html",
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/computercraft-16.png",
+        "32": "icons/computercraft-32.png",
+        "48": "icons/computercraft-48.png",
+        "128": "icons/computercraft-128.png"
+      }
+    },
+    "icons": {
+      "16": "icons/computercraft-16.png",
+      "32": "icons/computercraft-32.png",
+      "48": "icons/computercraft-48.png",
+      "128": "icons/computercraft-128.png"
+    }
+  }
