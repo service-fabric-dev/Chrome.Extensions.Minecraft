@@ -7,6 +7,12 @@ class SearchService {
         this._enableCaching = enableCaching;
     }
 
+    async search(modpack, searchTerm) {
+        var mods = await this.getMods(modpack);
+
+        return mods.filter(mod => mod.includes(searchTerm));
+    }
+
     async nameExists(modpack, name) {
         if (isNullOrWhiteSpace(modpack)) {
             return false;
